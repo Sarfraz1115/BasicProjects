@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div id="calulator">
+        <input type="text" id="display">
+        <div class="keys">
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="ondedelete()"><i class='bx bx-arrow-back'></i></button>
+            <button onclick="inputondisplay('.')">.</button>
+            <button  class="unique" onclick="inputondisplay('/')">/</button>
+        </div>
+        <div class="keys">
+            <button onclick="inputondisplay('7')">7</button>
+            <button onclick="inputondisplay('8')">8</button>
+            <button onclick="inputondisplay('9')">9</button>
+            <button   class="unique" onclick="inputondisplay('+')">+</button>
+        </div>
+        <div class="keys">
+            <button onclick="inputondisplay('4')">4</button>
+            <button onclick="inputondisplay('5')">5</button>
+            <button onclick="inputondisplay('6')">6</button>
+            <button  class="unique" onclick="inputondisplay('-')">-</button>
+        </div>
+        <div class="keys">
+            <button onclick="inputondisplay('1')">1</button>
+            <button onclick="inputondisplay('2')">2</button>
+            <button onclick="inputondisplay('3')">3</button>
+            <button  class="unique" onclick="inputondisplay('*')">x</button>
+        </div>
+        <div class="keys">
+            <button onclick="inputondisplay('0')">0</button>
+            <button onclick="inputondisplay('00')">00</button>
+            <button  class="unique" onclick="calculate()" id="equal">=</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

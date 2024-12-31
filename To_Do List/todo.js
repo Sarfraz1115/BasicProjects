@@ -1,7 +1,6 @@
 let written = document.getElementById("inptbx");
 let maintext = document.getElementById("list-container");
 let mybtn = document.getElementById("addbtn");
-
 mybtn.addEventListener("click", () => {
     if (written.value == '') {
         alert("not written anything")

@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #fff;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container */
+.fullbody {
+    width: 90%;
+    /* border: 2px solid black; */
+    height: 90vh;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: scroll;
+}
+
+
+
+/*  heading */
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 50%; */
+    padding: 10px;
+    margin-top: 35px;
+    border-radius: 50%;
+}
+
+.my {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/*  balance and income */
+.balance {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.balance #money {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.income-expense {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.income-expense p{
+    font-size: 1.4rem;
+}
+.income-expense p .green{
+    color: green;
+    font-size: 1.8rem;
+}
+
+.income-expense p .red{
+    color: red;
+    font-size: 1.8rem;
+}
+
+/* form css */
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.form #desc{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.subform{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+}
+.subform input{
+    border: 1px solid black;
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.expense-category{
+    border: 1px solid black;
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+}
+#addbtn{
+    padding: 5px 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* table css */
+.lists{
+    margin-top: 2rem;
+    width: 90%;
+    /* border-collapse: collapse; */
+}
+.lists h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.root {
+    /* width: fit-content; */
+    background-color: white;
+    display: flex;
+    margin: auto;
+    padding: 2%;
+    padding-top: 1%;
+    justify-content: space-evenly;
+    text-align: center;
+    border-width: 6px;
+    border: 6px grey;
+    /* box-sizing: content-box; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.expense{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#table{
+    border-collapse: collapse;
+    width: 50vw;
+    border: 1px solid #ddd;
+    font-size: 18px;
+} 
+ #table th{
+    padding: 8px;
+    text-align: left;
+    background-color: lightgreen; 
+    border: 2px solid black;
+ } 
+
+ #tablebody tr td{
+    text-align: left;
+    border: 1px solid black;
+    padding: 5px;
+ }
+
+ #tablebody{
+    overflow: scroll;
+ }
+ .deletebtn{
+    padding: 5px 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
+
+ .root .total p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.root .total p span{
+    font-size: 15px;
+    margin-left: 10px;
+}
+#totalExp{
+    margin-top: 5px;
+}
+#totalExp{
+    font-size: 25px;
+    font-weight: bold;
+    color: lightgreen;
+}
+#totalbudget{
+    font-size: 25px;
+    font-weight: bold;
+    color: lightcoral;
+}

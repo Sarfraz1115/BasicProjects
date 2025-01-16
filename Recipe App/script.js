@@ -71,4 +71,19 @@ btn.addEventListener("click", (e) => {
     fetchRecipe(searchword);
 })
 
+
+
+
+
+{loading ? (
+    <h2>Fetching the data...</h2>
+  ) : recipes.length > 0 ? (
+    <ul>
+      {recipes.map((recipe, index) => (
+        <li key={index}>{recipe.name}</li>
+      ))}
+    </ul>
+  ) : (
+    <p>No recipes found. Try a new search.</p>
+  )}
    

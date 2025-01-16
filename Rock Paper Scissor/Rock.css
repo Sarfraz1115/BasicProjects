@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgreen;
+}
+.section{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 60vh;
+    width: 50%;
+    background: white;
+    border: 2px solid black;
+}
+.section h2{
+    text-align: center;
+    padding: 10px;
+    color: black;
+    margin: 5px 4px;
+    font-size: 25px;
+}
+.section .actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    gap: 20px;
+}
+.section .actions button{
+    padding: 10px 20px;
+    border: none;
+    background: lightseagreen;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.section .actions button:hover{
+    background: darkseagreen;
+}
+.result .choose{
+    display: flex;
+    justify-content: center;
+}
+.choose{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.choose h4,h5{
+    text-align: center;
+    font-size: 20px;
+}
+.result p{
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+}
+
+#winner {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: 25px;
+    margin-top: 3rem;
+}

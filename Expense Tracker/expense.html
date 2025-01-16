@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="expense.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="fullbody">
+        <div class="heading">
+            <div class="my">
+                <h1 class="">Expense Tracker<h1></h1>
+            </div>
+        </div>
+        <div class="balance">
+            <p>Budget Left: </p>
+            <span id="money"> 20000 </span>
+        </div>
+        <div class="income-expense">
+            <p>Income <br> <span class="green">50000 Rs</span></p>
+            <p>Expense <br> <span class="red">30000 Rs</span></p>
+        </div>
+
+        <div class="form">
+            <input type="text" name="" id="desc" placeholder="Description">
+            <div class="subform">
+                <input type="number" placeholder="Amount" id="amount">
+                <input type="date" name="" id="date">
+                <button id="addbtn">Add</button>
+            </div>
+            <div class="lists">
+                <div class="expense">
+                    <h3>Expenses</h3>
+                </div>
+                <div class="root">
+                    <table id="table">
+                        <tr class="titles">
+                            <th>S.no.</th>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tbody id="tablebody">
+                            
+                            <!-- <tr>
+                                <td>1</td>
+                                <td>Food</td>
+                                <td>30000 Rs</td>
+                                <td><button class="deletebtn">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Food</td>
+                                <td>30000 Rs</td>
+                                <td><button class="deletebtn">Delete</button></td>
+                            </tr>  -->
+                        </tbody> 
+                    </table>
+                    <div class="total">
+                        <p>Total Expenses :  <span id="totalExp"> </span></p>
+                        <p>Left Budget money :  <span id="totalbudget"> </span></p>
+
+    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="expense.js"></script>
+
+</html>
